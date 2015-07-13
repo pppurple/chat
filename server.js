@@ -6,9 +6,10 @@ var chat = require('./lib/socket/chat.js');
 var server = http.createServer();
 var io = require('socket.io').listen(server);
 
-var PORT = 8080;
+var IP   = process.env.OPENSHIFT_NODEJS_IP   || '127.0.0.1';
+var PORT = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
-server.listen(PORT, function(){
+server.listen(PORT, IP, function(){
 	console.log('chat server listening on port ' + PORT);
 });
 
