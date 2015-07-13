@@ -1,0 +1,89 @@
+<% extend 'layout.ect' %>
+<script src="/js/room.js"></script>
+<script>
+	var minichat = {
+	roomName: '<%= @room.name %>',
+	password: '<%= @room.password %>',
+	userName: '<%= @userName %>',
+	roomId: '<%= @room.name %><%= @room.password %>',
+	mode: '<%= @mode %>'
+	};
+</script>
+
+	
+
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<img src="/img/title.png" width="" height="50">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="/">Home</a>
+						</li>
+						<li>
+						</li>
+						<li>
+						</li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<!-- /.container -->
+		<div class="container">
+			<h3>
+				room[<%= @room.name %>]
+			</h3>
+			<hr>
+			<div class="form-group">
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<!-- <form role="form" action="/room/" method="post"> -->
+						<h3>
+							<%= @userName %>
+						</h3>
+						<div class="form-group">
+							<label>
+								Your message:
+							</label>
+							<textarea class="form-control" placeholder="メッセージを入力...." id="messageBox" name="msg"></textarea>
+						</div>
+						<p>
+						</p>
+						<button type="submit" class="btn btn-info" id="postMessage">
+							送信
+						</button>
+					<!-- </form> -->
+				</div>
+				<div class="col-md-6">
+					<h4>
+						システムメッセージ
+					</h4>
+					<div class="well" id="systemMessages">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="container">
+				<div id="members-box">
+					<h5>チャットメンバー：</h5>
+					<ul id="members"></ul>
+				</div>
+			</div>
+			<div class="well" id="messages">
+			</div>
+			<hr>
+			<div class="pull-right">
+				Ver 0.1.0
+			</div>
+		</div>

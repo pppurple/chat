@@ -1,0 +1,60 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+}
+
+#headImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#systemMessages {
+  overflow:auto;
+  height: 95px;
+}
+
+.systemMessage {
+  margin-top: 8px;
+  border-bottom: 1px solid #ddd;
+  line-height: 120%;
+}
+
+#messages {
+  margin-top: 20px;
+  background: white;
+  border: 1px solid #bbb;
+}
+
+.message {
+  margin-top: 8px;
+  border-bottom: 1px solid #ddd;
+  line-height: 120%;
+}
+
+.message .postdate {
+  color: #aaa;
+}
+
+.message .author {
+  font-weight: bold;
+}
+
+.message .comment {
+  word-wrap: break-word;
+}
+
+#members-box {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+#members-box ul {
+  margin: 0 0 0 10px;;
+}
+#members-box li {
+  font-size: 100%;
+  list-style: none;
+}

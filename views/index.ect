@@ -1,0 +1,76 @@
+<% extend 'layout.ect' %>
+<div class="jumbotron" id="headJumbotron">
+	<img src="/img/title.png" id="headImage">
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h3>
+				Create
+				<br>
+			</h3>
+			<p>
+				新規にチャットルームを作成
+				<br>
+			</p>
+			<form role="form" action="/room/" method="post">
+				<div class="form-group">
+					<label>
+						ルーム名 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+					</label>
+					<input class="form-control" type="text" placeholder="ルーム名を入力...." id="newRoom" name="roomName">
+				</div>
+				<div class="form-group">
+					<label>
+						表示する名前
+					</label>
+					<input class="form-control" type="text" placeholder="表示名を入力...." id="newName" name="yourName">
+				</div>
+				<div class="form-group">
+					<label>
+						パスワード &nbsp; &nbsp; &nbsp; &nbsp;
+					</label>
+					<input class="form-control" type="password" placeholder="パスワードを入力...." id="password" name="password">
+				</div>
+				<button type="submit" class="btn btn pull-right btn-info" name="mode" value="create">create</button>
+			</form>
+		</div>
+		<div class="col-md-6">
+			<h3>
+				Enter
+				<br>
+			</h3>
+			<p>
+				既存のチャットルームに入る
+			</p>
+			<form role="form" action="/room/" method="post">
+				<div class="form-group">
+					<label>
+						ルーム名
+					</label>
+					<input class="form-control" type="text" placeholder="ルーム名を入力...." id="enterRoom" name="roomName">
+				</div>
+				<div class="form-group">
+					<label>
+						表示する名前
+					</label>
+					<input class="form-control" type="text" placeholder="表示名を入力...." id="enterName" name="yourName">
+				</div>
+				<div class="form-group">
+					<label>
+						パスワード
+					</label>
+					<input class="form-control" type="password" placeholder="パスワードを入力...." id="password" name="password">
+				</div>
+				<button type="submit" class="btn btn pull-right btn-success" name="mode" value="enter">enter&nbsp;</button>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<hr>
+<div class="pull-right">
+	ver 0.1.0
+	<br>
+</div>
