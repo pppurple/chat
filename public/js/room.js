@@ -92,7 +92,7 @@
 				socket.emit('auth check', minichat);
 			});
 		});
-	})
+	});
 
 	// チャットメッセージを更新する
 	function updateMessage(){

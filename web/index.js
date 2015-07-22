@@ -22,7 +22,7 @@ exports.room = function(req, res){
 			data += chunk;
 		});
 		req.on('end', sendResponse);
-		function sendResponse(){
+		var sendResponse = function (){
 			var query = querystring.parse(data);
 			var roomName = query.roomName || '';
 			var yourName = query.yourName || '';
@@ -52,7 +52,7 @@ exports.room = function(req, res){
 			var html = renderer.render('room', params);
 			res.writeHead(200, {'Content-Type': 'text/html; charset=UTF-8'});
 			res.end(html);
-		}
+		};
 
 	}else{
 		res.writeHead(500);

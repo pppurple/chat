@@ -1,6 +1,6 @@
 var http = require('http');
 var path = require('path');
-var web　 = require('./web')
+var web　 = require('./web');
 var chat = require('./lib/socket/chat.js');
 
 var server = http.createServer();
