@@ -1,6 +1,11 @@
 {
-  "name": "chat",
+  "name": "websocket-chat",
   "version": "0.0.1",
+  "description": "Websocket chat program written by Node.js",
+  "homepage": "https://github.com/pppurple/websocket-chat",
+  "author": {
+    "name": "pppurple"
+  },
   "dependencies": {
     "ect": "*",
     "socket.io": "1.3.5"
