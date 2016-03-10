@@ -1,2 +1,2 @@
 # websocket chat
-websocket chat program written by Node.js
+Websocket chat program written by Node.js
